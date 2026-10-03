@@ -1,0 +1,145 @@
+/* Configurações básicas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fundo da página com o tom azul mais claro (#E2FDFF) */
+body {
+    background-color: #E2FDFF;
+    font-family: Arial, sans-serif;
+    color: #1a202c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Cartão centralizador BRANCO (Aumentado de 480px para 680px) */
+.container {
+    background-color: #ffffff;
+    max-width: 680px; /* Aumentado para ocupar melhor a tela */
+    width: 95%; /* Ocupa a quase totalidade em telas menores */
+    padding: 40px 35px; /* Mais espaço interno */
+    border-radius: 24px;
+    box-shadow: 0px 8px 25px rgba(84, 101, 255, 0.18);
+    text-align: center;
+}
+
+/* Cabeçalho */
+.perfil h1 {
+    font-size: 2rem; /* Título ligeiramente maior */
+    color: #5465FF;
+    margin-bottom: 8px;
+}
+
+.bio {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+/* Seção Sobre Mim AZUL (Aumentada e mais espaçada) */
+.card-sobre {
+    background-color: #BFD7FF;
+    padding: 28px 24px; /* Mais preenchimento interno */
+    border-radius: 18px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.card-sobre h2 {
+    font-size: 1.35rem;
+    color: #5465FF;
+    margin-bottom: 10px;
+}
+
+.card-sobre > p {
+    font-size: 0.98rem;
+    color: #2c3e50;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Lista de Interesses com Fotos */
+.interesses-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Mais espaço entre cada item */
+}
+
+.item-gosto {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #ffffff;
+    padding: 14px 18px; /* Cartões dos itens mais espaçosos */
+    border-radius: 12px;
+}
+
+/* Estilo para as fotos dos itens */
+.foto-item {
+    width: 80px; /* Fotos dos itens ligeiramente maiores */
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #788BFF;
+}
+
+.texto-item strong {
+    display: block;
+    color: #5465FF;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.texto-item p {
+    font-size: 0.9rem;
+    color: #4a5568;
+    line-height: 1.4;
+}
+
+/* Seção de Links */
+.links-container h2 {
+    font-size: 1.2rem;
+    color: #5465FF;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+/* Botões de Link */
+.btn-link {
+    display: block;
+    background-color: #788BFF;
+    color: #ffffff;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-link:hover {
+    background-color: #5465FF;
+    transform: translateY(-2px);
+}
+
+/* Botão de Destaque */
+.btn-link.destaque {
+    background-color: #5465FF;
+}
+
+.btn-link.destaque:hover {
+    background-color: #3b4ccf;
+}
+
+footer {
+    margin-top: 25px;
+    font-size: 0.85rem;
+    color: #777777;
+}
